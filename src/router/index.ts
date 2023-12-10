@@ -1,15 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TestPage from '../pages/TestPage.vue'
+import { routes } from './routes'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'test',
-      component: TestPage
-    },
-  ]
+  routes: routes
 })
 
 export default router
